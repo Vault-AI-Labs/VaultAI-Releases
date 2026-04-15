@@ -1,6 +1,6 @@
 {
-  "version": 1,
-  "updatedAt": "2026-03-12T00:00:00Z",
+  "version": 2,
+  "updatedAt": "2026-04-15T00:00:00Z",
   "models": [
     {
       "id": "flux-2-klein-4b",
@@ -16,19 +16,6 @@
       "description": "4B distilled diffusion model — fast image generation (4 steps)"
     },
     {
-      "id": "flux-2-klein-9b",
-      "filename": "flux-2-klein-9b.safetensors",
-      "subfolder": "diffusion_models",
-      "hfRepo": "black-forest-labs/FLUX.2-klein-9B",
-      "hfPath": "flux-2-klein-9b.safetensors",
-      "sizeBytes": 18157185168,
-      "gated": true,
-      "tiers": ["pro", "ultra"],
-      "required": true,
-      "displayName": "FLUX.2 Klein 9B",
-      "description": "9B distilled diffusion model — best quality (4 steps)"
-    },
-    {
       "id": "qwen-3-4b-text-encoder",
       "filename": "qwen_3_4b_fp16.safetensors",
       "subfolder": "text_encoders",
@@ -42,19 +29,6 @@
       "description": "Text encoder for Klein 4B"
     },
     {
-      "id": "qwen-3-8b-text-encoder",
-      "filename": "qwen_3_8b.safetensors",
-      "subfolder": "text_encoders",
-      "hfRepo": "Comfy-Org/vae-text-encorder-for-flux-klein-9b",
-      "hfPath": "split_files/text_encoders/qwen_3_8b.safetensors",
-      "sizeBytes": 16381517176,
-      "gated": false,
-      "tiers": ["pro", "ultra"],
-      "required": true,
-      "displayName": "Qwen 3 8B Text Encoder",
-      "description": "Text encoder for Klein 9B"
-    },
-    {
       "id": "flux2-vae",
       "filename": "flux2-vae.safetensors",
       "subfolder": "vae",
@@ -65,7 +39,7 @@
       "tiers": ["core", "pro", "ultra"],
       "required": true,
       "displayName": "FLUX.2 VAE",
-      "description": "VAE decoder for all Klein models"
+      "description": "VAE decoder for Klein 4B"
     }
   ]
 }
